@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "apis/*": [
+        "./apis/*"
+      ],
+      "assets/*": [
+        "./assets/*"
+      ],
+      "components/*": [
+        "./components/*"
+      ],
+      "constants/*": [
+        "./constants/*"
+      ],
+      "contexts/*": [
+        "./contexts/*"
+      ],
+      "hooks/*": [
+        "./hooks/*"
+      ],
+      "libs/*": [
+        "./libs/*"
+      ],
+      "helpers/*": [
+        "./helpers/*"
+      ],
+      "screens/*": [
+        "./screens/*"
+      ],
+      "types/*": [
+        "./types/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "jest.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}

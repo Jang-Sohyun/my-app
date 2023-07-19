@@ -1,0 +1,17 @@
+{
+  "version": 0,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "arn:aws:ecs:ap-northeast-2:455802296267:task-definition/web-prod",
+          "LoadBalancerInfo": {
+            "ContainerName": "ddle",
+            "ContainerPort": 80
+          }
+        }
+      }
+    }
+  ]
+}

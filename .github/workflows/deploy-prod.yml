@@ -1,0 +1,115 @@
+name: '운영 배포'
+
+on:
+  push:
+    branches:
+      - main
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       isConfirmed:
+#         description: '빌드합니까?'
+#         required: true
+#         type: boolean
+
+env:
+  SERVICE: web
+  APP_ENV: PROD
+  ECR_REGISTRY: 455802296267.dkr.ecr.ap-northeast-2.amazonaws.com
+  ECR_REPOSITORY: ddle
+  CLUSTER: ddle
+  TASK_DEFINITION: ./.github/ci/prod-task-definition.json
+  APP_SPEC: ./.github/ci/prod-appspec.json
+  CODEDEPLOY_APP: AppECS-ddle-web
+  CODEDEPLOY_DEPLOYMENT_GROUP: DgpECS-ddle-web
+  GIT_COMMIT: ${{ github.sha }}
+  # IS_CONFIRMED: ${{ github.event.inputs.isConfirmed }}
+  REF_NAME: ${{ github.ref_name }}
+  REF_TYPE: ${{ github.ref_type	}}
+
+jobs:
+  deploy:
+    name: 운영 배포 프로세스
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Log inputs
+        run: |
+          echo "SERVICE=$SERVICE"
+          echo "APP_ENV=$APP_ENV"
+          echo "ECR_REGISTRY=$ECR_REGISTRY"
+          echo "ECR_REPOSITORY=$ECR_REPOSITORY"
+          echo "TASK_DEFINITION=$TASK_DEFINITION"
+          echo "APP_SPEC=$APP_SPEC"
+          echo "CODEDEPLOY_APP=$CODEDEPLOY_APP"
+          echo "CODEDEPLOY_DEPLOYMENT_GROUP=$CODEDEPLOY_DEPLOYMENT_GROUP"
+          echo "CLUSTER=$CLUSTER"
+          echo "GIT_COMMIT=$GIT_COMMIT"
+          echo "IS_CONFIRMED=$IS_CONFIRMED"
+          echo "REF_NAME=$REF_NAME"
+          echo "REF_TYPE=$REF_TYPE"
+
+      # - name: Input Validation
+      #   if: ${{ env.IS_CONFIRMED == 'false' }}
+      #   run: |
+      #     exit 1
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-2
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build, tag, and push image to Amazon ECR
+        id: build-image
+        run: |
+          docker build . --build-arg=APP_ENV=$APP_ENV --build-arg=GIT_COMMIT=$GIT_COMMIT -t $ECR_REGISTRY/$ECR_REPOSITORY:latest -t $ECR_REGISTRY/$ECR_REPOSITORY:$GIT_COMMIT
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY --all-tags
+          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$GIT_COMMIT"
+
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: render-web-container
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: ${{ env.TASK_DEFINITION }}
+          container-name: ${{ env.ECR_REPOSITORY }}
+          image: ${{ steps.build-image.outputs.image }}
+
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: ${{ steps.render-web-container.outputs.task-definition }}
+          service: ${{ env.SERVICE }}
+          cluster: ${{ env.CLUSTER }}
+          codedeploy-appspec: ${{ env.APP_SPEC }}
+          codedeploy-application: ${{ env.CODEDEPLOY_APP }}
+          codedeploy-deployment-group: ${{ env.CODEDEPLOY_DEPLOYMENT_GROUP }}
+          wait-for-service-stability: true
+
+      - name: Send result
+        id: slack
+        uses: slackapi/slack-github-action@v1.18.0
+        with:
+          # For posting a rich message using Block Kit
+          payload: |
+            {
+              "text": "[Web Prod update]: ${{ job.status }} - ${{ github.event.head_commit.message }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "[Web Prod update]: ${{ job.status }} - ${{ github.event.head_commit.message }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
