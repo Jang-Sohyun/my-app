@@ -1,5 +1,5 @@
 import { Tabs, Tab } from '@mui/material';
-import { subTab } from 'types/index';
+import { subTab } from '../../types/index';
 
 type Props = {
   tabs: subTab[];

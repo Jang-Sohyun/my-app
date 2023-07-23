@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { apis } from 'apis/index';
+import { apis } from '../../../apis/index';
 import axios from 'axios';
 
 // Fake users data

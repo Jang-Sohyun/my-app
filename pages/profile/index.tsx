@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
-import BottomMenu from 'components/common/BottomMenu';
-import { myActivityMenus, customerSupportMenus } from 'constants/submenu';
+import BottomMenu from '../../components/common/BottomMenu';
+import { myActivityMenus, customerSupportMenus } from '../../constants/submenu';
 import { useRouter } from 'next/router';
-import ScreenBox from 'components/ScreenBox';
-import TopHeader from 'components/common/TopHeader';
-import SubMenuList from 'components/profile/SubMenuList';
-import UserSummary from 'components/profile/UserSummary';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
+import ScreenBox from '../../components/ScreenBox';
+import TopHeader from '../../components/common/TopHeader';
+import SubMenuList from '../../components/profile/SubMenuList';
+import UserSummary from '../../components/profile/UserSummary';
+import { useDdleContext } from '../../contexts/Ddle';
+import { apis } from '../../apis';
 import { Stack } from '@mui/material';
-import ArtistEnroller from 'components/ArtistEnroller';
-import { useContext as useConfirm } from 'contexts/confirm';
+import ArtistEnroller from '../../components/ArtistEnroller';
+import { useContext as useConfirm } from '../../contexts/confirm';
 import { useSnackbar } from 'notistack';
 
 const Profile = () => {

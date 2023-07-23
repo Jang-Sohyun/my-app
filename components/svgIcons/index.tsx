@@ -1,5 +1,5 @@
 import SvgIcon from '@mui/material/SvgIcon';
-import theme from 'constants/theme';
+import theme from '../../constants/theme';
 
 export const AppleIcon = (props: any) => (
   <SvgIcon

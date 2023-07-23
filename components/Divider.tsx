@@ -1,5 +1,5 @@
 import { Divider as MuiDivider, SxProps } from '@mui/material';
-import theme from 'constants/theme';
+import theme from '../constants/theme';
 
 type Props = {
   sx?: SxProps;

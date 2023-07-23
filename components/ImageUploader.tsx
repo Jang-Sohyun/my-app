@@ -1,7 +1,7 @@
 import { Box, Stack, IconButton, ButtonBase, Typography } from '@mui/material';
-import Alert from 'components/Alert';
-import useConfirmDialog from 'libs/useConfirmDialog';
-import { PhotoIcon } from 'components/svgIcons';
+import Alert from '../components/Alert';
+import useConfirmDialog from '../libs/useConfirmDialog';
+import { PhotoIcon } from '../components/svgIcons';
 import { AddRounded, CancelRounded } from '@mui/icons-material';
 import ImgInput, { ImageInputType } from './ImgInput';
 

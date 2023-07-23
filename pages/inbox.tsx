@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import ScreenBox from 'components/ScreenBox';
-import BottomMenu from 'components/common/BottomMenu';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../components/ScreenBox';
+import BottomMenu from '../components/common/BottomMenu';
+import BasicAppBar from '../components/common/BasicAppBar';
 import {
   Stack,
   Typography as Text,
@@ -12,9 +12,9 @@ import {
   ListItemButton,
 } from '@mui/material';
 import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
-import { pushLists } from 'constants/mockData';
-import * as newStaticUrls from 'constants/staticUrls';
-import Image from 'components/Image';
+import { pushLists } from '../constants/mockData';
+import * as newStaticUrls from '../constants/staticUrls';
+import Image from '../components/Image';
 
 // 알림 메시지가 하나도 없을 때 안내 메시지 표시 컴포넌트
 const EmptyInbox = () => (

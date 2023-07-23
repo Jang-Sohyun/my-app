@@ -1,6 +1,6 @@
 import { Dispatch } from 'react';
-import Alert, { AlertButton as Button } from 'components/Alert';
-import BottomSheet from 'components/BottomSheet';
+import Alert, { AlertButton as Button } from '../components/Alert';
+import BottomSheet from '../components/BottomSheet';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';

@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import NestedList from 'components/profile/NestedList';
-import AccountChanger from 'components/AccountChanger';
-import AddressChanger from 'components/AddressChanger';
-import BankAccountChanger from 'components/BankAccountChanger';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import NestedList from '../../components/profile/NestedList';
+import AccountChanger from '../../components/AccountChanger';
+import AddressChanger from '../../components/AddressChanger';
+import BankAccountChanger from '../../components/BankAccountChanger';
 import { Stack, Typography, Button, Avatar } from '@mui/material';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { useDdleContext } from '../../contexts/Ddle';
+import { apis } from '../../apis';
+import { useContext as useConfirm } from '../../contexts/confirm';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
 

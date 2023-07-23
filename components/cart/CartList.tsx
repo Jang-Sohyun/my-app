@@ -2,7 +2,7 @@ import { Stack, Box, Typography as Text, Button } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import Checkbox from '@mui/material/Checkbox';
-import ProductListByProvider from 'components/cart/ProductListByProvider';
+import ProductListByProvider from '../../components/cart/ProductListByProvider';
 import { useMemo } from 'react';
 
 const CartList = ({

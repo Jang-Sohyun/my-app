@@ -12,7 +12,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import Checkbox from '@mui/material/Checkbox';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import comma from 'libs/comma';
+import comma from '../../libs/comma';
 
 type ProductListByProviderProps = {
   cartItems: any;

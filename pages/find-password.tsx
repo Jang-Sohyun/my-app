@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../components/ScreenBox';
 import Text from '@mui/material/Typography';
 import { Box, OutlinedInput } from '@mui/material';
-import BasicAppBar from 'components/common/BasicAppBar';
-import GuidanceTitle from 'components/GuidanceTitle';
-import NextButton from 'components/NextButton';
+import BasicAppBar from '../components/common/BasicAppBar';
+import GuidanceTitle from '../components/GuidanceTitle';
+import NextButton from '../components/NextButton';
 
 const FindPassword = () => {
   const router = useRouter();

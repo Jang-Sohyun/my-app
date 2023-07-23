@@ -1,15 +1,15 @@
 import { useMemo, useState, useEffect } from 'react';
-import ScreenBox from 'components/ScreenBox';
-import CategorySelect from 'components/common/CategorySelect';
-import TopHeader from 'components/common/TopHeader';
-import PostTimeLine from 'components/common/PostTimeLine';
-import { commuinityCategoryTabs } from 'constants/category';
+import ScreenBox from '../../components/ScreenBox';
+import CategorySelect from '../../components/common/CategorySelect';
+import TopHeader from '../../components/common/TopHeader';
+import PostTimeLine from '../../components/common/PostTimeLine';
+import { commuinityCategoryTabs } from '../../constants/category';
 import Box from '@mui/material/Box';
-import CreateFab from 'components/CreateFab';
-import { apis } from 'apis';
+import CreateFab from '../../components/CreateFab';
+import { apis } from '../../apis';
 import dayjs from 'dayjs';
 import { useRouter } from 'next/router';
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../../contexts/Ddle';
 
 const Community = () => {
   const router = useRouter();

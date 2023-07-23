@@ -1,7 +1,7 @@
 // import NextImage from 'next/image'
-// import PlaceholderImg from 'constants/empty'
+// import PlaceholderImg from '../constants/empty'
 import { ImageProps } from 'next/image';
-import { EmptyImg } from 'constants/empty';
+import { EmptyImg } from '../constants/empty';
 
 interface Props extends Omit<ImageProps, 'src'> {
   src?: string | null;

@@ -1,6 +1,6 @@
 import Text from '@mui/material/Typography';
 import { OutlinedInput } from '@mui/material';
-import GuidanceTitle from 'components/GuidanceTitle';
+import GuidanceTitle from '../../components/GuidanceTitle';
 
 type Props = {
   userId: number;

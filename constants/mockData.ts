@@ -1,4 +1,4 @@
-import { Artwork } from 'types/index';
+import { Artwork } from '../types/index';
 
 /* 
 API 연동전 API 응답 데이터로 가정한 mock 데이터입니다.

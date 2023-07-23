@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { initalFaqLists } from 'constants/mockData';
-import { apis } from 'apis';
+import { initalFaqLists } from '../../constants/mockData';
+import { apis } from '../../apis';
 import NestedListWithCollabse from './NestedListWithCollabse';
 
 const Faq = () => {

@@ -1,13 +1,13 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
 import { Button, Stack, Typography } from '@mui/material';
-import TextInput from 'components/TextInput';
+import TextInput from '../../components/TextInput';
 import { useState, useEffect } from 'react';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { useContext as useConfirm } from '../../contexts/confirm';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import { apis } from '../../apis';
+import { useDdleContext } from '../../contexts/Ddle';
 
 const RULE_PLACEHOLDER = `상세 규정 내용을 작성해주세요.
 

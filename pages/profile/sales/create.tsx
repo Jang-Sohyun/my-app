@@ -1,17 +1,17 @@
 import { Stack, Button, Typography, FormControl } from '@mui/material';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../../../components/ScreenBox';
 import { useEffect, useState } from 'react';
-import ImageUploader from 'components/ImageUploader';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
-import { useContext as useConfirm } from 'contexts/confirm';
+import ImageUploader from '../../../components/ImageUploader';
+import { useDdleContext } from '../../../contexts/Ddle';
+import { apis } from '../../../apis';
+import { useContext as useConfirm } from '../../../contexts/confirm';
 import { useRouter } from 'next/router';
-import TextInput from 'components/TextInput';
-import SelectableList from 'components/SelectableList';
-import { HOME_CATEGORIES } from 'constants/category';
-import Switch from 'components/Switch';
-import BasicAppBar from 'components/common/BasicAppBar';
-import Editor from 'components/editor';
+import TextInput from '../../../components/TextInput';
+import SelectableList from '../../../components/SelectableList';
+import { HOME_CATEGORIES } from '../../../constants/category';
+import Switch from '../../../components/Switch';
+import BasicAppBar from '../../../components/common/BasicAppBar';
+import Editor from '../../../components/editor';
 import { useSnackbar } from 'notistack';
 
 const Create = ({ open, onOpen, onClose, product, onSubmit }) => {

@@ -1,6 +1,6 @@
 import { ListSubheader, List } from '@mui/material';
 import { useRouter } from 'next/router';
-import { SubMenuListType } from 'types/index';
+import { SubMenuListType } from '../../types/index';
 import SubMenuListItem from './SubMenuListItem';
 
 const SubMenuList = ({ subHeaderText, menus }: SubMenuListType) => {

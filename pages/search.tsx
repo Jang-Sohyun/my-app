@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import ScreenBox from 'components/ScreenBox';
-import SearchAppBar from 'components/common/SearchAppBar';
+import ScreenBox from '../components/ScreenBox';
+import SearchAppBar from '../components/common/SearchAppBar';
 import { Stack, Chip, Typography, Box } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -8,7 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import { useEffect, useRef, useMemo } from 'react';
-import { apis } from 'apis';
+import { apis } from '../apis';
 
 function AlignItemsList({
   items,

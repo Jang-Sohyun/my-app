@@ -1,19 +1,19 @@
 import { useEffect, useMemo, useState } from 'react';
-import BottomMenu from 'components/common/BottomMenu';
-import AvatarProfile from 'components/AvatarProfile';
-import ScreenBox from 'components/ScreenBox';
+import BottomMenu from '../../../components/common/BottomMenu';
+import AvatarProfile from '../../../components/AvatarProfile';
+import ScreenBox from '../../../components/ScreenBox';
 import { Stack, Button } from '@mui/material';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { useRouter } from 'next/router';
-import { handleUrl } from 'libs/url';
-import BasicAppBar from 'components/common/BasicAppBar';
-import PostTimeLine from 'components/common/PostTimeLine';
-import ReviewList from 'components/ReviewList';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { handleUrl } from '../../../libs/url';
+import BasicAppBar from '../../../components/common/BasicAppBar';
+import PostTimeLine from '../../../components/common/PostTimeLine';
+import ReviewList from '../../../components/ReviewList';
+import { useDdleContext } from '../../../contexts/Ddle';
+import { apis } from '../../../apis';
+import { useContext as useConfirm } from '../../../contexts/confirm';
 import { useSnackbar } from 'notistack';
 
 const Profile = ({ profile }: any) => {

@@ -13,7 +13,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
 import { useState } from 'react';
-import TextInput from 'components/TextInput';
+import TextInput from '../../components/TextInput';
 import dayjs from 'dayjs';
 
 type Props = {

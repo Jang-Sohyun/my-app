@@ -1,5 +1,5 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../../../components/ScreenBox';
+import BasicAppBar from '../../../../components/common/BasicAppBar';
 import {
   Box,
   Stack,
@@ -10,19 +10,19 @@ import {
 } from '@mui/material';
 import dayjs from 'dayjs';
 import { KeyboardArrowRight } from '@mui/icons-material';
-import comma from 'libs/comma';
-import BottomSheet from 'components/BottomSheet';
+import comma from '../../../../libs/comma';
+import BottomSheet from '../../../../components/BottomSheet';
 import { useEffect, useState } from 'react';
-import { WriteIcon } from 'components/svgIcons';
-import Alert from 'components/Alert';
+import { WriteIcon } from '../../../../components/svgIcons';
+import Alert from '../../../../components/Alert';
 import { useRouter } from 'next/router';
-import OrderItem from 'components/OrderItem';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
+import OrderItem from '../../../../components/OrderItem';
+import { useDdleContext } from '../../../../contexts/Ddle';
+import { apis } from '../../../../apis';
 import { useSnackbar } from 'notistack';
-import { useContext as useConfirm } from 'contexts/confirm';
-import OrderList from 'components/OrderList';
-import { CS_MAIL } from 'constants/service';
+import { useContext as useConfirm } from '../../../../contexts/confirm';
+import OrderList from '../../../../components/OrderList';
+import { CS_MAIL } from '../../../../constants/service';
 
 const DataListItem = ({ name, value, valueSx }: any) => (
   <Stack key={name} direction="row">

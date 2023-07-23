@@ -1,7 +1,7 @@
 import Stack from '@mui/material/Stack';
 import Text from '@mui/material/Typography';
-import { Colors } from 'constants/theme';
-import { BottomBarHeight } from 'constants/styles';
+import { Colors } from '../constants/theme';
+import { BottomBarHeight } from '../constants/styles';
 
 type Props = {
   text?: string | null;

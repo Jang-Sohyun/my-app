@@ -1,5 +1,5 @@
 import { List, ListItemButton, ListItemText } from '@mui/material';
-import { SubMenuType } from 'types/index';
+import { SubMenuType } from '../../types/index';
 
 const SubMenuListItem = ({ label, pageName, onClick }: SubMenuType) => {
   return (

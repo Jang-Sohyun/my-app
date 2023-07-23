@@ -1,6 +1,6 @@
 import generateBaseRestApi from './generateBaseRestApi';
 
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../contexts/Ddle';
 import { useState, useRef, useEffect } from 'react';
 
 const apis = generateBaseRestApi('artist-note-comments');

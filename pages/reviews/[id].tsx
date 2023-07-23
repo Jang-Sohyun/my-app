@@ -1,14 +1,14 @@
-import ScreenBox from 'components/ScreenBox';
-import BottomMenu from 'components/common/BottomMenu';
-import PostTimeLine from 'components/common/PostTimeLine';
-import { commuinityCategoryTabs } from 'constants/category';
-import CreateFab from 'components/CreateFab';
-import { apis } from 'apis';
+import ScreenBox from '../../components/ScreenBox';
+import BottomMenu from '../../components/common/BottomMenu';
+import PostTimeLine from '../../components/common/PostTimeLine';
+import { commuinityCategoryTabs } from '../../constants/category';
+import CreateFab from '../../components/CreateFab';
+import { apis } from '../../apis';
 import { useRouter } from 'next/router';
-import { useDdleContext } from 'contexts/Ddle';
-import ReviewItem from 'components/ReviewItem';
+import { useDdleContext } from '../../contexts/Ddle';
+import ReviewItem from '../../components/ReviewItem';
 import { Stack } from '@mui/material';
-import BasicAppBar from 'components/common/BasicAppBar';
+import BasicAppBar from '../../components/common/BasicAppBar';
 
 const Note = ({ review }: any) => {
   return (

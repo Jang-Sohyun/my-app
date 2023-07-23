@@ -1,10 +1,10 @@
 import { Typography } from '@mui/material';
 import { Stack } from '@mui/material';
-import BottomSheet from 'components/BottomSheet';
+import BottomSheet from '../components/BottomSheet';
 import { useEffect, useState, useMemo } from 'react';
 import ProductSaleList from './ProductSaleList';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import { apis } from '../apis';
+import { useDdleContext } from '../contexts/Ddle';
 
 const AttachSaleItems = ({ open, onOpen, onClose, onClickProduct }) => {
   const { user } = useDdleContext();

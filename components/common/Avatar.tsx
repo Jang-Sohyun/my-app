@@ -1,6 +1,6 @@
 import { Stack, Avatar } from '@mui/material';
 import Text from '@mui/material/Typography';
-import { Artist } from 'types/index';
+import { Artist } from '../../types/index';
 import Link from 'next/link';
 
 type Props = {

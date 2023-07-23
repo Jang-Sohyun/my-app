@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../components/ScreenBox';
 import { Box } from '@mui/material';
-import NextButton from 'components/NextButton';
-import { JoinStep } from 'types/index';
-import ServiceAgreement from 'components/join/ServiceAgreement';
-import SmsAuth from 'components/join/SmsAuth';
-import MemberJoin from 'components/join/MemberJoin';
-import BasicAppBar from 'components/common/BasicAppBar';
-import { apis } from 'apis/index';
-import { useDdleContext } from 'contexts/Ddle';
+import NextButton from '../components/NextButton';
+import { JoinStep } from '../types/index';
+import ServiceAgreement from '../components/join/ServiceAgreement';
+import SmsAuth from '../components/join/SmsAuth';
+import MemberJoin from '../components/join/MemberJoin';
+import BasicAppBar from '../components/common/BasicAppBar';
+import { apis } from '../apis/index';
+import { useDdleContext } from '../contexts/Ddle';
 import { useSnackbar } from 'notistack';
 
 const initialAgreements = [

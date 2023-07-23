@@ -1,7 +1,7 @@
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { SxProps } from 'libs/sx';
+import { SxProps } from '../libs/sx';
 
 const Loader = ({
   height,

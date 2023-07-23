@@ -7,8 +7,8 @@ import {
   Checkbox,
   Divider,
 } from '@mui/material';
-import GuidanceTitle from 'components/GuidanceTitle';
-import CheckBoxWithLabel from 'components/CheckBoxWithLabel';
+import GuidanceTitle from '../../components/GuidanceTitle';
+import CheckBoxWithLabel from '../../components/CheckBoxWithLabel';
 
 type Props = {
   isCheckAll: boolean;

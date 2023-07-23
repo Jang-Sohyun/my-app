@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Fab, ButtonBase } from '@mui/material';
-import * as StaticUrls from 'constants/staticUrls';
+import * as StaticUrls from '../constants/staticUrls';
 
 type Props = {
   href: string;

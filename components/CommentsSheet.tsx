@@ -1,19 +1,19 @@
 import { Typography, Avatar } from '@mui/material';
 import { Stack, IconButton, Box } from '@mui/material';
-import TextInput from 'components/TextInput';
-import BottomSheet from 'components/BottomSheet';
+import TextInput from '../components/TextInput';
+import BottomSheet from '../components/BottomSheet';
 import { useEffect, useRef, useState } from 'react';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SendIcon from '@mui/icons-material/Send';
-import { apis } from 'apis/index';
+import { apis } from '../apis/index';
 import dayjs from 'dayjs';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { useContext as useMoreConfirm } from 'contexts/moreConfirm';
+import { useContext as useConfirm } from '../contexts/confirm';
+import { useContext as useMoreConfirm } from '../contexts/moreConfirm';
 import Close from '@mui/icons-material/Close';
 import { useSnackbar } from 'notistack';
 import Loader from './Loader';
 import { useQueryClient } from 'react-query';
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../contexts/Ddle';
 import Link from 'next/link';
 import VerifiedIcon from '@mui/icons-material/Verified';
 

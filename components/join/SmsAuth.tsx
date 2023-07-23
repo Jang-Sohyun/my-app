@@ -1,6 +1,6 @@
 import Text from '@mui/material/Typography';
 import { Stack, OutlinedInput, Button } from '@mui/material';
-import GuidanceTitle from 'components/GuidanceTitle';
+import GuidanceTitle from '../../components/GuidanceTitle';
 import { Check, PriorityHigh } from '@mui/icons-material';
 
 type Props = {

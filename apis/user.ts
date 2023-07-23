@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import generateBaseRestApi from './generateBaseRestApi';
-import { Receipient, StoreKey, User } from 'types';
+import { Receipient, StoreKey, User } from '../types';
 import { request, getJwt } from './index';
 
 const apis = generateBaseRestApi('users');

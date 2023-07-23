@@ -1,10 +1,10 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../components/ScreenBox';
+import BasicAppBar from '../components/common/BasicAppBar';
 import { Box, Stack, Typography, Chip } from '@mui/material';
 import dayjs from 'dayjs';
 import { KeyboardArrowRight } from '@mui/icons-material';
 import { useRouter } from 'next/router';
-import comma from 'libs/comma';
+import comma from '../libs/comma';
 
 type Props = {
   image: string;

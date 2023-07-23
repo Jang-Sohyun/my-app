@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
-import { BottomBarHeight } from 'constants/styles';
-import theme from 'constants/theme';
-import { SxProps, toArray } from 'libs/sx';
+import { BottomBarHeight } from '../constants/styles';
+import theme from '../constants/theme';
+import { SxProps, toArray } from '../libs/sx';
 import { Divider, NoSsr, Stack, Typography } from '@mui/material';
 import Loader from './Loader';
 

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { formatDescriptionSummary } from 'libs/utils';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
-import WriteReview from 'components/WriteReview';
+import { formatDescriptionSummary } from '../libs/utils';
+import { apis } from '../apis';
+import { useDdleContext } from '../contexts/Ddle';
+import WriteReview from '../components/WriteReview';
 import Link from 'next/link';
 import {
   Stack,
@@ -16,8 +16,8 @@ import {
 } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import dayjs from 'dayjs';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { useContext as useMoreConfirm } from 'contexts/moreConfirm';
+import { useContext as useConfirm } from '../contexts/confirm';
+import { useContext as useMoreConfirm } from '../contexts/moreConfirm';
 import { useSnackbar } from 'notistack';
 
 const Community = ({ item, showDetail }) => {

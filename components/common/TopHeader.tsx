@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import { Stack, Box, IconButton } from '@mui/material';
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../../contexts/Ddle';
 import Text from '@mui/material/Typography';
-import Image from 'components/Image';
-import * as newStaticUrls from 'constants/staticUrls';
+import Image from '../../components/Image';
+import * as newStaticUrls from '../../constants/staticUrls';
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
 import Badge from '@mui/material/Badge';
 

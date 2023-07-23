@@ -1,5 +1,5 @@
 import { Avatar, Typography as Text, Stack } from '@mui/material';
-import { EmptyImg } from 'constants/empty';
+import { EmptyImg } from '../constants/empty';
 
 type Props = {
   avatar?: string | null;

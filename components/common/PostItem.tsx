@@ -8,20 +8,20 @@ import {
   Box,
   IconButton,
 } from '@mui/material';
-import AvatarProfile from 'components/common/Avatar';
-import { LikeIcon } from 'components/svgIcons';
-import { formatCount, formatDescriptionSummary } from 'libs/utils';
-import * as StaticUrls from 'constants/staticUrls';
+import AvatarProfile from '../../components/common/Avatar';
+import { LikeIcon } from '../../components/svgIcons';
+import { formatCount, formatDescriptionSummary } from '../../libs/utils';
+import * as StaticUrls from '../../constants/staticUrls';
 import dayjs from 'dayjs';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import { apis } from '../../apis';
+import { useDdleContext } from '../../contexts/Ddle';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { useContext as useMoreConfirm } from 'contexts/moreConfirm';
+import { useContext as useConfirm } from '../../contexts/confirm';
+import { useContext as useMoreConfirm } from '../../contexts/moreConfirm';
 import LinkIcon from '@mui/icons-material/Link';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
-import share from 'libs/share';
+import share from '../../libs/share';
 import Link from 'next/link';
 import { LinkIt } from 'react-linkify-it';
 

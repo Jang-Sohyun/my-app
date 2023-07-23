@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
-import BottomMenu from 'components/common/BottomMenu';
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import PostTimeLine from 'components/common/PostTimeLine';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
+import BottomMenu from '../../components/common/BottomMenu';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import PostTimeLine from '../../components/common/PostTimeLine';
+import { useDdleContext } from '../../contexts/Ddle';
+import { apis } from '../../apis';
 
 const Page = () => {
   const { user } = useDdleContext();

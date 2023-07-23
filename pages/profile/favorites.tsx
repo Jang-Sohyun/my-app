@@ -1,16 +1,16 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import GalleryList from 'components/common/GalleryList';
-import { initialReviews } from 'constants/mockData';
-import BottomMenu from 'components/common/BottomMenu';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import GalleryList from '../../components/common/GalleryList';
+import { initialReviews } from '../../constants/mockData';
+import BottomMenu from '../../components/common/BottomMenu';
 import { DeleteRounded, CloseRounded, CheckRounded } from '@mui/icons-material';
 import { Box, Stack, IconButton } from '@mui/material';
-import Alert from 'components/Alert';
+import Alert from '../../components/Alert';
 import { useState, useMemo } from 'react';
-import useConfirmDialog from 'libs/useConfirmDialog';
+import useConfirmDialog from '../../libs/useConfirmDialog';
 import { useRouter } from 'next/router';
-import { apis } from 'apis/index';
-import { useDdleContext } from 'contexts/Ddle';
+import { apis } from '../../apis/index';
+import { useDdleContext } from '../../contexts/Ddle';
 
 const Favorite = () => {
   const router = useRouter();

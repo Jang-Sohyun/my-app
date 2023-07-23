@@ -1,11 +1,11 @@
 import { Stack, Avatar, Typography, IconButton } from '@mui/material';
 import Box from '@mui/material/Box';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { apis } from 'apis';
+import { apis } from '../apis';
 import dayjs from 'dayjs';
-import { useDdleContext } from 'contexts/Ddle';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { useContext as useMoreConfirm } from 'contexts/moreConfirm';
+import { useDdleContext } from '../contexts/Ddle';
+import { useContext as useConfirm } from '../contexts/confirm';
+import { useContext as useMoreConfirm } from '../contexts/moreConfirm';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
 

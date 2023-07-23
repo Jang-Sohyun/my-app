@@ -1,11 +1,11 @@
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
-import { ShareIcon, MessageIcon, NotiIcon } from 'components/svgIcons';
+import { ShareIcon, MessageIcon, NotiIcon } from '../../components/svgIcons';
 import { Stack, IconButton, Box } from '@mui/material';
 import { CloseRounded } from '@mui/icons-material';
-import { LikeIcon } from 'components/svgIcons';
-import { ScreenWidth } from 'constants/styles';
-import share from 'libs/share';
+import { LikeIcon } from '../../components/svgIcons';
+import { ScreenWidth } from '../../constants/styles';
+import share from '../../libs/share';
 
 const styles = {
   bottomSnackbar: {

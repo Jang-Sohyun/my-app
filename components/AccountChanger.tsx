@@ -1,11 +1,11 @@
 import { Typography, Divider } from '@mui/material';
 import { Stack, Button, IconButton, Box, Avatar } from '@mui/material';
-import TextInput from 'components/TextInput';
-import BottomSheet from 'components/BottomSheet';
+import TextInput from '../components/TextInput';
+import BottomSheet from '../components/BottomSheet';
 import { useEffect, useState } from 'react';
 import CloseOutlined from '@mui/icons-material/CloseOutlined';
 import ImgInput from './ImgInput';
-import { apis } from 'apis/index';
+import { apis } from '../apis/index';
 
 const AccountChanger = ({
   initialValues,

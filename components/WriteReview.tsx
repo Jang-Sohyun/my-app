@@ -1,10 +1,10 @@
 import { Typography, Divider } from '@mui/material';
 import { Stack, Button, IconButton, Box } from '@mui/material';
-import TextInput from 'components/TextInput';
-import BottomSheet from 'components/BottomSheet';
+import TextInput from '../components/TextInput';
+import BottomSheet from '../components/BottomSheet';
 import { useEffect, useState } from 'react';
 import CloseOutlined from '@mui/icons-material/CloseOutlined';
-import { apis } from 'apis';
+import { apis } from '../apis';
 
 const data = {
   image: '/images/mock8.jpg',

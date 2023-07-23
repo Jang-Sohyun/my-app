@@ -10,15 +10,15 @@ import {
   Stack,
 } from '@mui/material';
 import Text from '@mui/material/Typography';
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import SubTabs from 'components/common/SubTabs';
-import { subTabsInSubscriptionManagement } from 'constants/subTabs';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import SubTabs from '../../components/common/SubTabs';
+import { subTabsInSubscriptionManagement } from '../../constants/subTabs';
 import { useRouter } from 'next/router';
-import { apis } from 'apis/index';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { useDdleContext } from 'contexts/Ddle';
-import Loader from 'components/Loader';
+import { apis } from '../../apis/index';
+import { useContext as useConfirm } from '../../contexts/confirm';
+import { useDdleContext } from '../../contexts/Ddle';
+import Loader from '../../components/Loader';
 
 interface FollowItem {
   id?: number | null;

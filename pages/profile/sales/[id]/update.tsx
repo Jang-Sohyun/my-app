@@ -7,10 +7,10 @@ import {
   Typography,
   Divider,
 } from '@mui/material';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../../../../components/ScreenBox';
 import { useEffect, useState } from 'react';
 import ArrowLeft from '@mui/icons-material/ArrowBack';
-import ImageUploader from 'components/ImageUploader';
+import ImageUploader from '../../../../components/ImageUploader';
 
 const placeholder = `상세한 작품 정보를 입력해주세요.
 영감받은 작가/제작과정/작품상세 사진 및 영상/포장 및 증정품 등 관련 내용을 자세히 작성해주세요.`;

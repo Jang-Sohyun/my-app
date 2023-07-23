@@ -1,7 +1,7 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import ReviewList from 'components/ReviewList';
-import { useDdleContext } from 'contexts/Ddle';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import ReviewList from '../../components/ReviewList';
+import { useDdleContext } from '../../contexts/Ddle';
 
 const Review = () => {
   // get loggined user

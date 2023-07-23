@@ -1,10 +1,10 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import CategorySelect from 'components/common/CategorySelect';
+import CategorySelect from '../../components/common/CategorySelect';
 import Masonry from '@mui/lab/Masonry';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Loader from 'components/Loader';
+import Loader from '../../components/Loader';
 import GalleryItem from './GalleryItem';
 
 type Props = {

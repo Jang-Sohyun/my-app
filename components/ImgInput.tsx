@@ -1,4 +1,4 @@
-import { apis } from 'apis/index';
+import { apis } from '../apis/index';
 import { Backdrop, Typography } from '@mui/material';
 import { useState } from 'react';
 

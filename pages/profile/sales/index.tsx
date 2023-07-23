@@ -1,11 +1,11 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../../components/ScreenBox';
+import BasicAppBar from '../../../components/common/BasicAppBar';
 import { Stack, Button, Typography } from '@mui/material';
 import { useMemo } from 'react';
-import ProductSaleList from 'components/ProductSaleList';
+import ProductSaleList from '../../../components/ProductSaleList';
 import { useRouter } from 'next/router';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import { apis } from '../../../apis';
+import { useDdleContext } from '../../../contexts/Ddle';
 
 const Update = () => {
   const { user } = useDdleContext();

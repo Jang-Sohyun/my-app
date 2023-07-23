@@ -1,7 +1,7 @@
 import { ReactNode, useRef, useMemo, useState } from 'react';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark-reasonable.css';
-import { apis } from 'apis/index';
+import { apis } from '../../apis/index';
 
 // ----------------------------------------------------------------------
 

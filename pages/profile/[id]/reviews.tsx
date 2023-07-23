@@ -1,14 +1,14 @@
 import { useState, useEffect, useMemo } from 'react';
-import ScreenBox from 'components/ScreenBox';
-import BottomMenu from 'components/common/BottomMenu';
-import PostTimeLine from 'components/common/PostTimeLine';
-import { commuinityCategoryTabs } from 'constants/category';
-import { initalPosts } from 'constants/mockData';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../../components/ScreenBox';
+import BottomMenu from '../../../components/common/BottomMenu';
+import PostTimeLine from '../../../components/common/PostTimeLine';
+import { commuinityCategoryTabs } from '../../../constants/category';
+import { initalPosts } from '../../../constants/mockData';
+import BasicAppBar from '../../../components/common/BasicAppBar';
 import { useRouter } from 'next/router';
-import { formatCount, formatDescriptionSummary } from 'libs/utils';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import { formatCount, formatDescriptionSummary } from '../../../libs/utils';
+import { apis } from '../../../apis';
+import { useDdleContext } from '../../../contexts/Ddle';
 import Link from 'next/link';
 import {
   Stack,
@@ -21,7 +21,7 @@ import {
 } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import dayjs from 'dayjs';
-import ReviewItem from 'components/ReviewItem';
+import ReviewItem from '../../../components/ReviewItem';
 
 const Community = () => {
   const [posts, setPosts] = useState(initalPosts);

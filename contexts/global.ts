@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { User, SocialAuthList } from 'types';
+import { User, SocialAuthList } from '../types';
 
 interface Context {
   loading: boolean;

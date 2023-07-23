@@ -1,11 +1,11 @@
 import { Typography, Divider } from '@mui/material';
 import { Stack, Button, IconButton, Box } from '@mui/material';
-import TextInput from 'components/TextInput';
-import BottomSheet from 'components/BottomSheet';
+import TextInput from '../components/TextInput';
+import BottomSheet from '../components/BottomSheet';
 import { useEffect, useState } from 'react';
 import CloseOutlined from '@mui/icons-material/CloseOutlined';
-import DaumAddressFinder from 'components/DaumAddressFinder';
-import { BANKS } from 'constants/order';
+import DaumAddressFinder from '../components/DaumAddressFinder';
+import { BANKS } from '../constants/order';
 
 const AddressChanger = ({
   initialValues,

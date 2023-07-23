@@ -10,18 +10,18 @@ import {
   Box,
   Typography,
 } from '@mui/material';
-import AvatarProfile from 'components/AvatarProfile';
-import ScreenBox from 'components/ScreenBox';
-import CategorySelect from 'components/common/CategorySelect';
-import TopHeader from 'components/common/TopHeader';
+import AvatarProfile from '../components/AvatarProfile';
+import ScreenBox from '../components/ScreenBox';
+import CategorySelect from '../components/common/CategorySelect';
+import TopHeader from '../components/common/TopHeader';
 import { useRouter } from 'next/router';
-import { useDdleContext } from 'contexts/Ddle';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { CATEGORIES } from 'constants/artistTags';
-import { apis } from 'apis';
+import { useDdleContext } from '../contexts/Ddle';
+import { useContext as useConfirm } from '../contexts/confirm';
+import { CATEGORIES } from '../constants/artistTags';
+import { apis } from '../apis';
 import dayjs from 'dayjs';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Loader from 'components/Loader';
+import Loader from '../components/Loader';
 import Link from 'next/link';
 import { useSnackbar } from 'notistack';
 

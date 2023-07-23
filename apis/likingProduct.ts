@@ -1,5 +1,5 @@
 import generateBaseRestApi from './generateBaseRestApi';
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../contexts/Ddle';
 import { useRef } from 'react';
 
 const apis = generateBaseRestApi('liking-products');

@@ -1,6 +1,6 @@
 import { Stack, Typography } from '@mui/material';
 import { KeyboardArrowRight } from '@mui/icons-material';
-import OrderItem from 'components/OrderItem';
+import OrderItem from '../components/OrderItem';
 
 const List = (props: any) => {
   return (

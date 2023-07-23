@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { User } from 'types';
+import { User } from '../types';
 
 interface Context {
   loading: boolean;

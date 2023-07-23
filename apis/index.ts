@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { StoreKey } from 'types';
+import { StoreKey } from '../types';
 import user from './user';
 import refundAccount from './refundAccount';
 import delivery from './delivery';

@@ -7,11 +7,11 @@ import {
   OutlinedInput,
   Box,
 } from '@mui/material';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../../components/ScreenBox';
 import { useEffect, useState } from 'react';
 import ArrowLeft from '@mui/icons-material/ArrowBack';
-import ImageUploader from 'components/ImageUploader';
-import AttachSaleItems from 'components/AttachSaleItems';
+import ImageUploader from '../../components/ImageUploader';
+import AttachSaleItems from '../../components/AttachSaleItems';
 import LinkIcon from '@mui/icons-material/Link';
 
 const data = {

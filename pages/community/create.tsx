@@ -8,16 +8,16 @@ import {
   OutlinedInput,
   Divider,
 } from '@mui/material';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../../components/ScreenBox';
 import { useEffect, useState } from 'react';
 import ArrowLeft from '@mui/icons-material/ArrowBack';
-import ImageUploader, { ImageInput } from 'components/ImageUploader';
-import { useContext as useConfirm } from 'contexts/confirm';
-import { apis } from 'apis';
+import ImageUploader, { ImageInput } from '../../components/ImageUploader';
+import { useContext as useConfirm } from '../../contexts/confirm';
+import { apis } from '../../apis';
 import { useRouter } from 'next/router';
 import { useSnackbar } from 'notistack';
-import { useDdleContext } from 'contexts/Ddle';
-import AttachSaleItems from 'components/AttachSaleItems';
+import { useDdleContext } from '../../contexts/Ddle';
+import AttachSaleItems from '../../components/AttachSaleItems';
 import LinkIcon from '@mui/icons-material/Link';
 import CloseIcon from '@mui/icons-material/Close';
 

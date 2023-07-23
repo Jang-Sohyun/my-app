@@ -1,5 +1,5 @@
 import { Dispatch } from 'react';
-import Alert, { AlertButton as Button } from 'components/Alert';
+import Alert, { AlertButton as Button } from '../components/Alert';
 import createDataContext from './createDataContext';
 
 type Input = {

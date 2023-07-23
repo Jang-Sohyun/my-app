@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ScreenBox from 'components/ScreenBox';
+import ScreenBox from '../../components/ScreenBox';
 import {
   Stack,
   IconButton,
@@ -12,14 +12,14 @@ import {
 import Box from '@mui/material/Box';
 import { useRouter } from 'next/router';
 import PanoramaIcon from '@mui/icons-material/Panorama';
-import ImgInput from 'components/ImgInput';
+import ImgInput from '../../components/ImgInput';
 import Close from '@mui/icons-material/Close';
-import { apis } from 'apis';
-import { CATEGORIES, STYLES } from 'constants/artistTags';
-import { useDdleContext } from 'contexts/Ddle';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { apis } from '../../apis';
+import { CATEGORIES, STYLES } from '../../constants/artistTags';
+import { useDdleContext } from '../../contexts/Ddle';
+import { useContext as useConfirm } from '../../contexts/confirm';
 import { useSnackbar } from 'notistack';
-import SelectableList from 'components/SelectableList';
+import SelectableList from '../../components/SelectableList';
 
 const InputField = ({ label, value, onChange, placeholder }) => (
   <Stack direction="row" alignItems="center" sx={{ width: '100%' }}>

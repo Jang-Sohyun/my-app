@@ -8,15 +8,15 @@ import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import { Avatar, Box, Stack } from '@mui/material';
-import { formatCount } from 'libs/utils';
-import { LikeIcon } from 'components/svgIcons';
-import * as StaticUrls from 'constants/staticUrls';
+import { formatCount } from '../libs/utils';
+import { LikeIcon } from '../components/svgIcons';
+import * as StaticUrls from '../constants/staticUrls';
 import VerifiedIcon from '@mui/icons-material/Verified';
-import { apis } from 'apis';
+import { apis } from '../apis';
 import dayjs from 'dayjs';
 import SwipeableViews from 'react-swipeable-views';
 import Link from 'next/link';
-import share from 'libs/share';
+import share from '../libs/share';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {

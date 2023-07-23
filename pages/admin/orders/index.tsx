@@ -1,5 +1,5 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../../components/ScreenBox';
+import BasicAppBar from '../../../components/common/BasicAppBar';
 import {
   Box,
   Stack,
@@ -12,11 +12,11 @@ import {
 import dayjs from 'dayjs';
 import { KeyboardArrowRight } from '@mui/icons-material';
 import { useRouter } from 'next/router';
-import { apis } from 'apis';
+import { apis } from '../../../apis';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../../../contexts/Ddle';
 import { useMemo } from 'react';
-import OrderListComp from 'components/AdminOrderList';
+import OrderListComp from '../../../components/AdminOrderList';
 
 // 'order_items',
 // 'order_items.product',

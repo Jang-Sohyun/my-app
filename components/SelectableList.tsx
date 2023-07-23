@@ -1,5 +1,5 @@
 import { Stack, Box, Typography } from '@mui/material';
-import SelectableChip from 'components/SelectableChip';
+import SelectableChip from '../components/SelectableChip';
 
 const SelectableList = ({
   label,

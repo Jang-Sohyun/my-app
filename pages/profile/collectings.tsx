@@ -1,5 +1,5 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
 import {
   Typography,
   Stack,
@@ -12,11 +12,11 @@ import {
 import SwipeableView from 'react-swipeable-views';
 import { Fab } from '@mui/material';
 import Add from '@mui/icons-material/Add';
-import CollectingCardAdder from 'components/CollectingCardAdder';
+import CollectingCardAdder from '../../components/CollectingCardAdder';
 import { useMemo, useState } from 'react';
-import SiseCheck from 'components/SiseCheck';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import SiseCheck from '../../components/SiseCheck';
+import { apis } from '../../apis';
+import { useDdleContext } from '../../contexts/Ddle';
 import dayjs from 'dayjs';
 import { useSnackbar } from 'notistack';
 

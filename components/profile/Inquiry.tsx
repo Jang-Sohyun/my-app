@@ -10,12 +10,12 @@ import {
 } from '@mui/material';
 import { Theme, useTheme } from '@mui/material/styles';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import NextButton from 'components/NextButton';
-import { useDdleContext } from 'contexts/Ddle';
+import NextButton from '../../components/NextButton';
+import { useDdleContext } from '../../contexts/Ddle';
 import { useSnackbar } from 'notistack';
-import { apis } from 'apis/index';
+import { apis } from '../../apis/index';
 import { useRouter } from 'next/router';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { useContext as useConfirm } from '../../contexts/confirm';
 
 function getStyles(name: string, typeName: readonly string[], theme: Theme) {
   return {

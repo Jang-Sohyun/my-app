@@ -1,8 +1,8 @@
-import ScreenBox from 'components/ScreenBox';
-import PostTimeLine from 'components/common/PostTimeLine';
-import { apis } from 'apis';
+import ScreenBox from '../../components/ScreenBox';
+import PostTimeLine from '../../components/common/PostTimeLine';
+import { apis } from '../../apis';
 import { useRouter } from 'next/router';
-import BasicAppBar from 'components/common/BasicAppBar';
+import BasicAppBar from '../../components/common/BasicAppBar';
 
 const Note = ({ note }: any) => {
   const router = useRouter();

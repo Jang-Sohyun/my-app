@@ -1,5 +1,5 @@
-import { Checked, UnChecked } from 'components/Icons';
-import { Colors } from 'constants/theme';
+import { Checked, UnChecked } from '../components/Icons';
+import { Colors } from '../constants/theme';
 
 type Props = { isDone: boolean };
 const CheckIcon = ({ isDone }: Props) => {

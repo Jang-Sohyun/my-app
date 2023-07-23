@@ -1,4 +1,4 @@
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../contexts/Ddle';
 import { useRef } from 'react';
 import generateBaseRestApi from './generateBaseRestApi';
 

@@ -1,9 +1,9 @@
 import { Stack, Typography } from '@mui/material';
 import { useState } from 'react';
-import CommentsSheet from 'components/CommentsSheet';
-import PhotoPopUp from 'components/PhotoPopUp';
+import CommentsSheet from '../../components/CommentsSheet';
+import PhotoPopUp from '../../components/PhotoPopUp';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Loader from 'components/Loader';
+import Loader from '../../components/Loader';
 import PostItem from './PostItem';
 
 type PostTimeLineProps = {

@@ -1,9 +1,9 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
 import { Stack, Box, Typography as Text } from '@mui/material';
-import { noticeLists } from 'constants/mockData';
+import { noticeLists } from '../../constants/mockData';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { apis } from 'apis';
+import { apis } from '../../apis';
 import dayjs from 'dayjs';
 import { useMemo } from 'react';
 

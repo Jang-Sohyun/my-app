@@ -2,11 +2,11 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
-import { LikeIcon } from 'components/svgIcons';
+import { LikeIcon } from '../../components/svgIcons';
 import { CheckCircleOutline, CheckCircle } from '@mui/icons-material';
-import { useDdleContext } from 'contexts/Ddle';
+import { useDdleContext } from '../../contexts/Ddle';
 import Link from 'next/link';
-import { apis } from 'apis/index';
+import { apis } from '../../apis/index';
 
 function GalleryItem({
   item,

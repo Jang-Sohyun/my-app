@@ -1,7 +1,7 @@
 import { Box, Typography, Stack } from '@mui/material';
 import { useRouter } from 'next/router';
 import { useState, useMemo } from 'react';
-import { apis } from 'apis';
+import { apis } from '../apis';
 import clsx from 'clsx';
 
 const ReviewList = (props: any) => {

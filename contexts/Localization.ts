@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
-import { Locales } from 'types';
-import { LocaleWords } from 'types/localeWords';
+import { Locales } from '../types';
+import { LocaleWords } from '../types/localeWords';
 
 interface Context {
   t: (key: LocaleWords, params?: any) => string;

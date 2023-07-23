@@ -1,6 +1,6 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import InquiryHistory from 'components/profile/InquiryHistory';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import InquiryHistory from '../../components/profile/InquiryHistory';
 
 const CustomerSupport = () => {
   return (

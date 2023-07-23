@@ -1,13 +1,13 @@
 import Text from '@mui/material/Typography';
-import ScreenBox from 'components/ScreenBox';
-import Image from 'components/Image';
+import ScreenBox from '../components/ScreenBox';
+import Image from '../components/Image';
 import { Stack, ButtonBase, Box, Link, Typography } from '@mui/material';
-import * as newStaticUrls from 'constants/staticUrls';
-import { CS_MAIL } from 'constants/service';
-import { initiateSignIn as onClickAppleLogin } from 'libs/apple';
-import { initiateSignIn as onClickGoogleLogin } from 'libs/google';
-import { AppleIcon, KakaoIcon } from 'components/svgIcons';
-import * as webview from 'libs/webview';
+import * as newStaticUrls from '../constants/staticUrls';
+import { CS_MAIL } from '../constants/service';
+import { initiateSignIn as onClickAppleLogin } from '../libs/apple';
+import { initiateSignIn as onClickGoogleLogin } from '../libs/google';
+import { AppleIcon, KakaoIcon } from '../components/svgIcons';
+import * as webview from '../libs/webview';
 import { useEffect, useState } from 'react';
 
 const Login = () => {

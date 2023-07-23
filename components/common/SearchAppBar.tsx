@@ -6,9 +6,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useRouter } from 'next/router';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
-import { SearchIcon } from 'components/svgIcons';
+import { SearchIcon } from '../../components/svgIcons';
 import { useState, forwardRef } from 'react';
-import { handleUrl } from 'libs/url';
+import { handleUrl } from '../../libs/url';
 
 type Props = {
   title?: string;

@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
-import { initalQnaLists } from 'constants/mockData';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
+import { initalQnaLists } from '../../constants/mockData';
+import { apis } from '../../apis';
+import { useDdleContext } from '../../contexts/Ddle';
 import { useSnackbar } from 'notistack';
 import NestedListWithCollabse from './NestedListWithCollabse';
 

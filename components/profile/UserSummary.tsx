@@ -1,7 +1,7 @@
-import AvatarProfile from 'components/common/Avatar';
+import AvatarProfile from '../../components/common/Avatar';
 import { Stack, Box, Typography as Text, Alert } from '@mui/material';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
-import { User } from 'types/index';
+import { User } from '../../types/index';
 import { useRouter } from 'next/router';
 
 type typeUserSummary = {

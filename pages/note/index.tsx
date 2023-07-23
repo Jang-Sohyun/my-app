@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
-import ScreenBox from 'components/ScreenBox';
-import GalleryList from 'components/common/GalleryList';
+import ScreenBox from '../../components/ScreenBox';
+import GalleryList from '../../components/common/GalleryList';
 import {
   Stack,
   IconButton,
@@ -13,25 +13,25 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { useRouter } from 'next/router';
-import { handleUrl } from 'libs/url';
-import BasicAppBar from 'components/common/BasicAppBar';
-import PostTimeLine from 'components/common/PostTimeLine';
-import { initalArtWorks } from 'constants/mockData';
-import Alert from 'components/Alert';
-import { ShareIcon, MessageIcon, LikeIcon } from 'components/svgIcons';
+import { handleUrl } from '../../libs/url';
+import BasicAppBar from '../../components/common/BasicAppBar';
+import PostTimeLine from '../../components/common/PostTimeLine';
+import { initalArtWorks } from '../../constants/mockData';
+import Alert from '../../components/Alert';
+import { ShareIcon, MessageIcon, LikeIcon } from '../../components/svgIcons';
 import { styled } from '@mui/material/styles';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import Backdrop from '@mui/material/Backdrop';
 import ClickAwayListener from '@mui/base/ClickAwayListener';
-import useConfirmDialog from 'libs/useConfirmDialog';
+import useConfirmDialog from '../../libs/useConfirmDialog';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Collapse from '@mui/material/Collapse';
-import { apis } from 'apis/index';
-import { useDdleContext } from 'contexts/Ddle';
-import * as onboardings from 'libs/onboardings';
-import share from 'libs/share';
+import { apis } from '../../apis/index';
+import { useDdleContext } from '../../contexts/Ddle';
+import * as onboardings from '../../libs/onboardings';
+import share from '../../libs/share';
 
 const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />

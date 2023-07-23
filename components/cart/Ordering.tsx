@@ -1,6 +1,6 @@
 import { Stack, Typography as Text, Button } from '@mui/material';
-import * as newStaticUrls from 'constants/staticUrls';
-import Image from 'components/Image';
+import * as newStaticUrls from '../../constants/staticUrls';
+import Image from '../../components/Image';
 
 // 알림 메시지가 하나도 없을 때 안내 메시지 표시 컴포넌트
 

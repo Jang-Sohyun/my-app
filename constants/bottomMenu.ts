@@ -1,4 +1,4 @@
-import * as newStaticUrls from 'constants/staticUrls';
+import * as newStaticUrls from '../constants/staticUrls';
 
 // 회원 로그인시 하단 메뉴
 export const bottomMenuWithLogin = [

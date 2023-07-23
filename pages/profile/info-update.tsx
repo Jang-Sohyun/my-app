@@ -1,12 +1,12 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
 import { Button, Stack, Typography } from '@mui/material';
-import TextInput from 'components/TextInput';
+import TextInput from '../../components/TextInput';
 import { useState, useEffect } from 'react';
 import { Close } from '@mui/icons-material';
-import { apis } from 'apis';
-import { useDdleContext } from 'contexts/Ddle';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { apis } from '../../apis';
+import { useDdleContext } from '../../contexts/Ddle';
+import { useContext as useConfirm } from '../../contexts/confirm';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
 

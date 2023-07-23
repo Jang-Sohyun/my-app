@@ -12,12 +12,12 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShareIcon from '@mui/icons-material/ShareOutlined';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
-import AvatarProfile from 'components/common/Avatar';
-import { Post } from 'types/index';
-import { LikeIcon } from 'components/svgIcons';
+import AvatarProfile from '../../components/common/Avatar';
+import { Post } from '../../types/index';
+import { LikeIcon } from '../../components/svgIcons';
 import { SvgIcon } from '@mui/material';
-import { formatCount, formatDescriptionSummary } from 'libs/utils';
-import * as StaticUrls from 'constants/staticUrls';
+import { formatCount, formatDescriptionSummary } from '../../libs/utils';
+import * as StaticUrls from '../../constants/staticUrls';
 
 type PostTimeLineItemProps = {
   type: 'post' | 'note';

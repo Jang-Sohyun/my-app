@@ -1,15 +1,15 @@
 import { useMemo, useState } from 'react';
-import BottomMenu from 'components/common/BottomMenu';
-import ScreenBox from 'components/ScreenBox';
+import BottomMenu from '../../../../components/common/BottomMenu';
+import ScreenBox from '../../../../components/ScreenBox';
 import { Stack, Typography } from '@mui/material';
 import { useRouter } from 'next/router';
-import BasicAppBar from 'components/common/BasicAppBar';
+import BasicAppBar from '../../../../components/common/BasicAppBar';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import useConfirmDialog from 'libs/useConfirmDialog';
-import CuratingCard from 'components/CuratingCard';
-import { apis } from 'apis/index';
-import Alert from 'components/Alert';
-import ImagesPopUp from 'components/ImagesPopUp';
+import useConfirmDialog from '../../../../libs/useConfirmDialog';
+import CuratingCard from '../../../../components/CuratingCard';
+import { apis } from '../../../../apis/index';
+import Alert from '../../../../components/Alert';
+import ImagesPopUp from '../../../../components/ImagesPopUp';
 
 const Curatings = () => {
   const router = useRouter();

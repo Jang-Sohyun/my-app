@@ -1,15 +1,15 @@
 import { useRouter } from 'next/router';
-import ScreenBox from 'components/ScreenBox';
-import BottomMenu from 'components/common/BottomMenu';
-import BasicAppBar from 'components/common/BasicAppBar';
-import { products } from 'constants/mockData';
-import Ordering from 'components/cart/Ordering';
-import EmptyCart from 'components/cart/EmptyCart';
-import CartList from 'components/cart/CartList';
+import ScreenBox from '../components/ScreenBox';
+import BottomMenu from '../components/common/BottomMenu';
+import BasicAppBar from '../components/common/BasicAppBar';
+import { products } from '../constants/mockData';
+import Ordering from '../components/cart/Ordering';
+import EmptyCart from '../components/cart/EmptyCart';
+import CartList from '../components/cart/CartList';
 import { useState, useEffect, useMemo } from 'react';
 import { useSnackbar } from 'notistack';
-import { useDdleContext } from 'contexts/Ddle';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { useDdleContext } from '../contexts/Ddle';
+import { useContext as useConfirm } from '../contexts/confirm';
 import {
   Stack,
   Box,
@@ -17,8 +17,8 @@ import {
   Button,
   Snackbar,
 } from '@mui/material';
-import comma from 'libs/comma';
-import { apis } from 'apis/index';
+import comma from '../libs/comma';
+import { apis } from '../apis/index';
 
 const Inbox = () => {
   const router = useRouter();

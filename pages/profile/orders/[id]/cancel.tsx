@@ -1,21 +1,21 @@
 import { Typography, Divider } from '@mui/material';
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
-import OrderItem from 'components/OrderItem';
+import ScreenBox from '../../../../components/ScreenBox';
+import BasicAppBar from '../../../../components/common/BasicAppBar';
+import OrderItem from '../../../../components/OrderItem';
 import { Stack, Button, OutlinedInput, Input, Box, Link } from '@mui/material';
 import { KeyboardArrowDownOutlined } from '@mui/icons-material';
-import TextInput from 'components/TextInput';
-import BottomSheet from 'components/BottomSheet';
+import TextInput from '../../../../components/TextInput';
+import BottomSheet from '../../../../components/BottomSheet';
 import { useState } from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
+import { useDdleContext } from '../../../../contexts/Ddle';
+import { apis } from '../../../../apis';
 import { useSnackbar } from 'notistack';
-import { useContext as useConfirm } from 'contexts/confirm';
-import OrderList from 'components/OrderList';
+import { useContext as useConfirm } from '../../../../contexts/confirm';
+import OrderList from '../../../../components/OrderList';
 import { useRouter } from 'next/router';
 
 const Cancel = ({ order }: any) => {

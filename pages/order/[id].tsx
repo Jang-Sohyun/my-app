@@ -1,17 +1,17 @@
-import ScreenBox from 'components/ScreenBox';
-import BasicAppBar from 'components/common/BasicAppBar';
+import ScreenBox from '../../components/ScreenBox';
+import BasicAppBar from '../../components/common/BasicAppBar';
 import { Box, Stack, Typography, Button, Divider } from '@mui/material';
 import { KeyboardArrowRight } from '@mui/icons-material';
-import comma from 'libs/comma';
+import comma from '../../libs/comma';
 import { useEffect, useState } from 'react';
-import Alert from 'components/Alert';
+import Alert from '../../components/Alert';
 import { useRouter } from 'next/router';
-import OrderItem from 'components/OrderItem';
-import AddressChanger from 'components/AddressChanger';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis';
+import OrderItem from '../../components/OrderItem';
+import AddressChanger from '../../components/AddressChanger';
+import { useDdleContext } from '../../contexts/Ddle';
+import { apis } from '../../apis';
 import { useSnackbar } from 'notistack';
-import { useContext as useConfirm } from 'contexts/confirm';
+import { useContext as useConfirm } from '../../contexts/confirm';
 
 const OrderList = (props: any) => {
   return (

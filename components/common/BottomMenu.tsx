@@ -2,9 +2,9 @@ import { useRouter } from 'next/router';
 import Paper from '@mui/material/Paper';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import Image from 'components/Image';
-import { bottomMenuWithLogin } from 'constants/bottomMenu';
-import { useDdleContext } from 'contexts/Ddle';
+import Image from '../../components/Image';
+import { bottomMenuWithLogin } from '../../constants/bottomMenu';
+import { useDdleContext } from '../../contexts/Ddle';
 
 // FIXME : 하단 공용 메뉴는 특정 Context(로그인 여부/페이지)에 따라 달라질 수 있음. 이 부분 고려해서 추후 수정 해야함
 const BottomMenu = () => {

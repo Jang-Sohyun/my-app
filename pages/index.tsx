@@ -1,7 +1,7 @@
 import { useMemo, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Text from '@mui/material/Typography';
-import Image from 'components/Image';
+import Image from '../components/Image';
 import {
   Stack,
   Box,
@@ -10,13 +10,13 @@ import {
   ListItemAvatar,
   Avatar,
 } from '@mui/material';
-import ScreenBox from 'components/ScreenBox';
-import GalleryList from 'components/common/GalleryList';
-import * as newStaticUrls from 'constants/staticUrls';
-import TopHeader from 'components/common/TopHeader';
-import { HOME_CATEGORIES } from 'constants/category';
-import { useDdleContext } from 'contexts/Ddle';
-import { apis } from 'apis/index';
+import ScreenBox from '../components/ScreenBox';
+import GalleryList from '../components/common/GalleryList';
+import * as newStaticUrls from '../constants/staticUrls';
+import TopHeader from '../components/common/TopHeader';
+import { HOME_CATEGORIES } from '../constants/category';
+import { useDdleContext } from '../contexts/Ddle';
+import { apis } from '../apis/index';
 import dayjs from 'dayjs';
 import Link from 'next/link';
 
